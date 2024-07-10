@@ -1,0 +1,19 @@
+name: SayHello
+
+on:
+ push:
+   banches:
+     - main 
+
+jobs: 
+  Welcome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download your code
+        uses: actions/checkout@v2
+
+       - name: Say something
+        run: echo "hello world"
+        
+   
